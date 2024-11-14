@@ -1,0 +1,20 @@
+{% extends 'fourth_task/menu.html' %}
+
+{% block title%}
+    {{block.super}}
+{% endblock %}
+
+{% block pagename %}
+    <h1>{{market_head}}</h1>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    {% for product in products %}
+        <li>{{product}} <button>Купить</button></li>
+        <p></p>
+    {% endfor %}
+{% endblock %}
